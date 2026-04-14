@@ -58,3 +58,16 @@ Por defecto corre en `http://localhost:5173`.
 - Nosotros
 - Contacto
 - Admin (CRUD de productos)
+
+## Instalación automática en Windows (.bat)
+Desde la raíz del proyecto puedes ejecutar:
+
+```bat
+install_windows.bat
+```
+
+Este script:
+- instala dependencias en `servidor` y `cliente`
+- crea `servidor/.env` a partir de `.env.example` si no existe
+- te muestra los siguientes pasos para correr el proyecto
+
