@@ -66,8 +66,10 @@ Desde la raíz del proyecto puedes ejecutar:
 install_windows.bat
 ```
 
-Este script:
-- instala dependencias en `servidor` y `cliente`
+Este script ahora intenta instalar todo lo necesario:
+- Node.js + npm (si no existen)
+- MySQL Server (si no existe, en modo best-effort)
+- dependencias en `servidor` y `cliente`
 - crea `servidor/.env` a partir de `.env.example` si no existe
-- te muestra los siguientes pasos para correr el proyecto
+- opción para importar `servidor/db/schema.sql` automáticamente
 
